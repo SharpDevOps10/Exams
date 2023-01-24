@@ -4,11 +4,11 @@ const intersection = (object1, object2) => {
   const object1Keys = Object.keys(object1);
   const result = {};
   for (const key of object1Keys) {
-    if (object2[key] === object1[key]) {
-      result[key] = object1[key];
+    const value = object1[key];
+    if (object2[key] === value) {
+      result[key] = value;
     }
   }
   return result;
 };
-
 require('../Tests/intersection.js')(intersection);
