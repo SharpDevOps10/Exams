@@ -11,6 +11,4 @@ const planedArray = (arr) => {
   }
   return res;
 };
-const result = planedArray([[1, [[2]], [3, 4], [5], [6, [7, 8]]]]);
-console.log(result);
 require('../Tests/plane.js')(planedArray);
